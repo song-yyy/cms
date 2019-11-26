@@ -25,7 +25,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/category")
 @Api(description = "栏目管理")
-public class CateController {
+public class CategoryController {
 
     @Autowired
     private ICateGoryService categoryService;

@@ -12,7 +12,6 @@ import java.io.Serializable;
 public class Link implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     @ApiModelProperty(value = "链接Id")
     private int id;
 

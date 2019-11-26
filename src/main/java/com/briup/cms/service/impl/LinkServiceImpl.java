@@ -34,7 +34,7 @@ public class LinkServiceImpl implements ILinkService {
     }
 
     @Override
-    public List<Link> findAll(Link link) throws CustomerException {
+    public List<Link> findAll() throws CustomerException {
         return linkDao.findAll();
     }
 

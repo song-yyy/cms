@@ -48,7 +48,7 @@ public class LoginSuccessHandler implements AuthenticationSuccessHandler {
 
             response.setHeader(JwtTokenUtils.TOKEN_HEADER,token);
 
-            Message<String> success = MessageUtil.success(token);
+            Message<String> success = MessageUtil.success("token:"+token);
             response.getWriter().println(objectMapper.writeValueAsString(success));
         } catch (UsernameNotFoundException e) {
             response.getWriter().write(objectMapper.writeValueAsString(MessageUtil.error(401,"创建token失败，请与管理员联系")));
